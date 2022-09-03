@@ -27,7 +27,9 @@ button {
   opacity: 0.9;
 justify-content: center;
 
+
 }
+
 
 button:hover {
   opacity:1;
@@ -147,3 +149,5 @@ body{
   margin: 0;
   z-index: -1;
   }
+
+  
