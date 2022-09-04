@@ -13,3 +13,4 @@ spans.forEach((span, idx) => {
     span.classList.add("active");
   }, 750 * (idx + 1));
 });
+ 

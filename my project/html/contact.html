@@ -5,45 +5,84 @@
     type="image/x-icon"
   />
   <title>Contact</title>
+
+<link rel="stylesheet" href="../css/contact.css">
+
 </head>
+
+
+
+
 
 <div class="topnav">
   <a class="active" href="../../index.html">Main page</a>
- 
+
 
   <a href="./aboutme.html">About</a>
   <a href="./login.html">Sign Up</a>
 </div>
 
-<div class="container">
-  <form action="../html/soon.html">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name.." />
 
-    <label for="lname">Last Name</label>
-    <input
-      type="text"
-      id="lname"
-      name="lastname"
-      placeholder="Your last name.."
-    />
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Kuwait</option>
-      <option value="canada">USA</option>
-      <option value="usa">Else</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea
-      id="subject"
-      name="subject"
-      placeholder="Write something.."
-      style="height: 200px"
-    ></textarea>
-
-    <input type="submit" value="Submit" />
-  </form>
+<form
+action="https://formsubmit.co/abdullahalaa237@gmail.com"
+method="POST"
+class="container"
+>
+<div class="field name-box">
+  <input
+    type="text"
+    name="Name"
+    id="name"
+    class="input"
+    placeholder="Who Are You?"
+    required
+  />
+  <label class="test" for="name">Name</label>
 </div>
-<link rel="stylesheet" href="../css/contact.css" />
+
+<div class="field email-box">
+ 
+  <input
+    type="text"
+    id="email"
+    name="email"
+    class="input"
+    placeholder="name@email.com"
+    required
+  />
+  <label  class="test" for="email">Email</label>
+</div>
+
+<div class="field msg-box">
+  <input
+  type="text"
+  id="message"
+   name="msg"
+  class="input"
+    placeholder="Your message goes here..."
+  ></input>
+  <label  class="test" for="msg">Msg</label>
+</div>
+
+<input id="outhman"  type="submit" value="Send" class="button hvr-bounce-out" />
+</form>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+
+
+document.getElementById(`outhman`).addEventListener("click" , function()  {
+
+  Swal.fire(
+  'Sent',
+  'Thanks for contact us!!',
+  'success'
+)
+
+
+})
+
+</script>
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
